@@ -45,33 +45,47 @@ header .nav li a:hover {
   color: #333;
 }
 
-main .container .photo img {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+main .container {
+  background-color: #d1d1d1;
 }
 
-main .container .sentence {
-  display: none;
+main .container .photo {
+  min-height: 400px;
+  background: url("../images/sea.jpg") no-repeat center -450px;
+  border-bottom: #333 20px solid;
+}
+
+main .container .sentence h1 {
+  margin: 0;
+  padding-top: 125px;
+  text-align: center;
+  color: white;
+  font-size: 66px;
+}
+
+main .container .sentence p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
 }
 
 main .container .boxes {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 10px;
+  display: -ms-grid;
+  display: grid;
 }
 
-main .container .boxes .box1 img, main .container .boxes .box2 img, main .container .boxes .box3 img {
-  max-width: 100%;
+main .container .boxes .box {
+  text-align: center;
+}
+
+main .container .boxes .box img {
+  width: 90px;
   height: auto;
+}
+
+footer {
+  min-height: 65px;
+  background-color: #333;
 }
 /*# sourceMappingURL=sass.css.map */
