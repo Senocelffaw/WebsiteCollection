@@ -1,91 +1,107 @@
-body {
-  margin: 0;
+body, html {
   padding: 0;
-}
-
-header {
   margin: 0;
-  padding: 0;
-  background: #333;
+  height: 100%;
+  background-color: #333;
 }
 
 header .logo {
-  color: #fff;
   text-align: center;
+  padding-bottom: 10px;
+  color: #f2f2f2;
 }
 
 header .logo h1 {
+  padding: 0;
   margin: 0;
-  padding-bottom: 10px;
 }
 
 header .nav {
-  padding-bottom: 10px;
-  margin: auto;
+  text-align: center;
 }
 
 header .nav ul {
-  text-align: center;
-  margin: auto;
   padding: 0;
+  margin: 0;
 }
 
 header .nav li {
-  display: inline;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 10px 10px;
+  display: inline-block;
 }
 
 header .nav li a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
+  color: #f2f2f2;
 }
 
 header .nav li a:hover {
-  color: #333;
+  color: #f4567f;
 }
 
-main .container {
-  background-color: #d1d1d1;
+main .photo {
+  background: url("../images/sea.jpg") no-repeat -180px -800px;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  border-bottom: #f2f2f2 10px solid;
 }
 
-main .container .photo {
-  min-height: 400px;
-  background: url("../images/sea.jpg") no-repeat center -450px;
-  border-bottom: #333 20px solid;
-}
-
-main .container .sentence h1 {
-  margin: 0;
-  padding-top: 125px;
+main .photo .sentence {
   text-align: center;
-  color: white;
+  padding-top: 75px;
+  color: #60644d;
+}
+
+main .photo .sentence h1 {
   font-size: 66px;
 }
 
-main .container .sentence p {
-  text-align: center;
-  color: white;
-  font-size: 15px;
+main .photo .sentence p {
+  margin: auto;
+  font-size: 20px;
+  max-width: 500px;
 }
 
-main .container .boxes {
-  padding-top: 10px;
+main .boxes {
   display: -ms-grid;
   display: grid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
 }
 
-main .container .boxes .box {
+main .boxes .box {
+  padding-top: 20px;
   text-align: center;
+  width: 250px;
+  color: #f2f2f2;
 }
 
-main .container .boxes .box img {
-  width: 90px;
+main .boxes .box img {
+  width: 150px;
   height: auto;
 }
 
 footer {
-  min-height: 65px;
-  background-color: #333;
+  position: relative;
+  bottom: 0%;
+  padding: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  main .boxes {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=sass.css.map */
