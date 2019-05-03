@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background-color: #333;
+    background-color: #222;
     position: fixed;
     width: 100%;
     text-align: center;
@@ -25,6 +25,9 @@ header{
             font-size: 30px;
             text-decoration: none;
             color: #edff49;
+            &:hover{
+                color: #f2f2f2;
+            }
         }
     }
 }
@@ -66,6 +69,7 @@ header{
 }
 
 .projects{
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -90,12 +94,39 @@ header{
     }
 }
 
+.about{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 80%;
+    margin: auto;
+    .left{
+        width: 80%;
+        h2{
+            font-size: 50px;
+            color: #edff49;
+        }
+        p{
+            color: #f2f2f2;
+        }
+    }
+    .right{
+        padding-top: 20px;
+        img{
+            padding-bottom: 20px;
+            width: 150px;
+            height: auto;
+        }
+    }
+}
+
 .contact{
-    height: 300px;
+    height: 200px;
     margin: auto;
     width: 80%;
     p{
-        padding: 30px 0 0 0;
+        padding: 40px 0 0 0;
         margin: 0;
         color: #f2f2f2;
         text-align: center;
