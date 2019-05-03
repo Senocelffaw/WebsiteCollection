@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+.landing, .about, .menu, .contact {
+  height: 100vh;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  width: 90%;
+  margin: auto;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav ul {
+  list-style: none;
+}
+
+header .nav ul li {
+  padding: 40px 10px 0 10px;
+  display: inline-block;
+}
+
+header .nav ul li a {
+  text-decoration: none;
+  color: #00c3ff;
+}
+
+header .nav ul li a:hover {
+  color: pink;
+}
+
+header .nav img {
+  width: 75px;
+  height: auto;
+}
+
+.border {
+  background-color: pink;
+  border-bottom: #00c3ff 3px solid;
+  color: #007b91;
+  text-align: center;
+}
+
+.landing {
+  background: url(../images/stock1.jpg) center center;
+}
+
+.about {
+  background: url(../images/stock2.jpg) center center;
+}
+
+.menu {
+  background: url(../images/stock3.jpg) center center;
+}
+
+.contact {
+  background-color: #333;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

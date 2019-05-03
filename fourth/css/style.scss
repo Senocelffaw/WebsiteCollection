@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width:90%;
+    margin: auto;
+}
+
+.landing, .about, .menu, .contact{
+    height: 100vh;
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    width: 90%;
+    margin: auto;
+    .nav{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        ul{
+            list-style: none;
+            li{
+                padding: 40px 10px 0 10px;
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: rgb(0, 195, 255);
+                    &:hover{
+                        color: pink;
+                    }
+                }
+            }
+        }
+        img{
+            width: 75px;
+            height: auto;
+        }
+    }
+}
+
+.border{
+    background-color:pink;
+    border-bottom: rgb(0, 195, 255) 3px solid;
+    color: rgb(0, 123, 145);
+    text-align: center;
+}
+
+.landing{
+    background: url(../images/stock1.jpg) center center;
+}
+
+.about{
+    background: url(../images/stock2.jpg) center center;
+}
+
+.menu{
+    background: url(../images/stock3.jpg) center center;
+}
+
+.contact{
+    background-color: #333;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    height: 50px;
+}
