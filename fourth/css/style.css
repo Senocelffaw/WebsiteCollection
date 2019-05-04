@@ -87,29 +87,89 @@ header .nav img {
 }
 
 .about {
-  background: url(../images/stock1.jpg) center center;
-}
-
-.about .content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  margin: auto;
+  color: #333;
+  background-color: #f2f2f2;
 }
 
-.about .food2 {
-  width: 300px;
-  height: auto;
+.about img {
+  width: 100%;
+  height: 100vh;
+}
+
+.about .rightside {
+  width: 65%;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+.about .rightside h1 {
+  padding-bottom: 60px;
 }
 
 .menu {
   background: url(../images/stock2.jpg) center center;
+  display: -ms-grid;
+  display: grid;
+  grid-template: 1fr;
+}
+
+.menu img {
+  margin: auto;
 }
 
 .contact {
   background-color: #333;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  color: wheat;
+}
+
+.contact .text {
+  width: 70%;
+  margin: 250px auto 0 auto;
+  overflow: hidden;
+}
+
+.contact .text h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.contact .text table {
+  padding: 0;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.contact .text table th {
+  text-align: left;
+}
+
+.contact .text table th:nth-child(2) {
+  text-align: right;
+}
+
+.contact .icons {
+  padding-top: 170px;
+}
+
+.contact .icons .icon {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact .icons .icon .fas {
+  font-size: 50px;
+  padding-bottom: 15px;
 }
 
 footer {
