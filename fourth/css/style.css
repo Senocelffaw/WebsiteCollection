@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
 }
 
 header {
+  height: 65px;
   background-color: white;
   position: fixed;
   top: 0%;
@@ -47,6 +49,7 @@ header .nav ul li a {
 
 header .nav ul li a:hover {
   color: pink;
+  border-bottom: pink 3px solid;
 }
 
 header .nav img {
@@ -55,22 +58,54 @@ header .nav img {
 }
 
 .border {
-  background-color: pink;
-  border-bottom: #00c3ff 3px solid;
+  background-color: white;
   color: #007b91;
   text-align: center;
 }
 
 .landing {
-  background: url(../images/stock1.jpg) center center;
+  background: url(../images/stock4.jpg) center center;
+}
+
+.landing .text {
+  margin: auto;
+  width: 35vw;
+  padding-top: 35vh;
+  color: #00c3ff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.landing .text h1 {
+  text-align: center;
+  font-size: 65px;
+}
+
+.landing .text p {
+  text-align: center;
+  font-size: 30px;
 }
 
 .about {
-  background: url(../images/stock2.jpg) center center;
+  background: url(../images/stock1.jpg) center center;
+}
+
+.about .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: auto;
+}
+
+.about .food2 {
+  width: 300px;
+  height: auto;
 }
 
 .menu {
-  background: url(../images/stock3.jpg) center center;
+  background: url(../images/stock2.jpg) center center;
 }
 
 .contact {
@@ -80,6 +115,10 @@ header .nav img {
 footer {
   padding-top: 20px;
   text-align: center;
-  height: 50px;
+  height: 40px;
+  position: fixed;
+  bottom: 0%;
+  width: 90%;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
