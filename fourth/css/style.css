@@ -71,7 +71,7 @@ header .nav img {
   margin: auto;
   width: 35vw;
   padding-top: 35vh;
-  color: #00c3ff;
+  color: wheat;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
@@ -119,6 +119,8 @@ header .nav img {
 
 .menu img {
   margin: auto;
+  height: 100vh;
+  width: auto;
 }
 
 .contact {
@@ -180,5 +182,33 @@ footer {
   bottom: 0%;
   width: 90%;
   background-color: white;
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: 200vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about .rightside {
+    margin-top: 0;
+  }
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact .text {
+    margin: 100px auto 0 auto;
+  }
+  .contact .icons {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .contact .icons .icon {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
 }
 /*# sourceMappingURL=style.css.map */
