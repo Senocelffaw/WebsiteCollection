@@ -16,6 +16,8 @@ header {
   text-align: center;
   top: 0%;
   height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header ul {
