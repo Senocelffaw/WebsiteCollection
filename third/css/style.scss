@@ -3,10 +3,19 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     height: 100%;
     background-color: #333;
+}
+
+.projects, .about, .contact{
+    opacity: 0.0;
+    transition: 3s;
 }
 
 header{
