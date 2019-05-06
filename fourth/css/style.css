@@ -4,16 +4,23 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 90%;
   margin: auto;
 }
 
 .landing, .about, .menu, .contact {
-  height: 100vh;
+  min-height: 100vh;
+  -webkit-transition: min-height 1000s steps(1);
+  transition: min-height 1000s steps(1);
 }
 
 header {
+  z-index: 1;
   height: 65px;
   background-color: white;
   position: fixed;
@@ -64,16 +71,17 @@ header .nav img {
 }
 
 .landing {
-  background: url(../images/stock4.jpg) center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../images/stock4.jpg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/stock4.jpg) center center;
 }
 
 .landing .text {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
   margin: auto;
   width: 35vw;
   padding-top: 35vh;
-  color: wheat;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  color: #f2f2f2;
 }
 
 .landing .text h1 {
@@ -97,7 +105,7 @@ header .nav img {
 
 .about img {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about .rightside {
@@ -119,7 +127,7 @@ header .nav img {
 
 .menu img {
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
 }
 
@@ -185,20 +193,45 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body, html {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header .nav ul li a {
+    font-size: 15px;
+  }
+  .landing .text {
+    width: 90%;
+  }
+  .landing .text h1 {
+    font-size: 35px;
+  }
+  .landing .text p {
+    margin-top: 25px;
+    font-size: 20px;
+  }
   .about {
-    height: 200vh;
+    min-height: 200vh;
+    -webkit-transition: min-height 1000s steps(1);
+    transition: min-height 1000s steps(1);
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   .about .rightside {
     margin-top: 0;
   }
+  .menu img {
+    width: 100%;
+  }
   .contact {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding-bottom: 50px;
   }
   .contact .text {
-    margin: 100px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
   .contact .icons {
     text-align: left;
@@ -209,6 +242,10 @@ footer {
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
+  }
+  footer {
+    position: relative;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
